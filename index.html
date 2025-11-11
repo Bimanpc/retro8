@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>DOCX Viewer</title>
+  <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+  <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+  <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+  <!-- Include a DOCX-to-HTML library (e.g., Mammoth.js) -->
+  <script src="js/mammoth.browser.min.js"></script>
+
+  <link href="css/default.css" rel="stylesheet" />
+</head>
+<body class="win-type-body">
+  <div class="app">
+    <header class="win-header">
+      <h1 class="win-type-xx-large">DOCX Viewer</h1>
+      <div class="toolbar">
+        <button id="openDocxBtn" class="win-button">Open DOCX</button>
+        <button id="openWebBtn" class="win-button">Open via Web Viewer</button>
+      </div>
+    </header>
+
+    <section id="status" class="status"></section>
+
+    <section id="contentHost" class="content">
+      <div id="docxContainer" class="docx"></div>
+      <webview id="webViewer" src="" style="display:none;"></webview>
+    </section>
+  </div>
+
+  <script src="js/default.js"></script>
+</body>
+</html>
