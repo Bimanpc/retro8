@@ -1,0 +1,49 @@
+/* css/default.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  background: #1d1d1d;
+  color: #fff;
+  -ms-content-zooming: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.win-header {
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.toolbar .win-button {
+  margin-right: 10px;
+}
+
+.status {
+  padding: 10px 20px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.content {
+  flex: 1;
+  overflow: auto;
+  padding: 20px;
+}
+
+.docx {
+  background: #222;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.docx h1, .docx h2, .docx h3 {
+  color: #fff;
+}
+
+.docx p {
+  line-height: 1.6;
+}
